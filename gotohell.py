@@ -88,6 +88,7 @@ def type(s):
     with uinput.UInput() as ui:
         for triple in args:
             ui.write(*triple)
+            ui.syn()
         ui.write(e.EV_KEY, e.KEY_ENTER, 1)
         ui.write(e.EV_KEY, e.KEY_ENTER, 0)
         ui.syn()
