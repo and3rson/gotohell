@@ -3,6 +3,6 @@
 Installation:
 
 ```sh
-pip install python-evdev
+pip install evdev
 python2.7 ./gotohell.py
 ```
